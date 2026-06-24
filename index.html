@@ -53,7 +53,7 @@ tr:last-child td{border-bottom:none}
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
 .amap{padding:4px 12px;font-size:14px;margin-left:6px}
 td .amap,th .amap{display:inline-block;vertical-align:middle}
-@media(max-width:640px){.hero{padding:40px 20px 30px}.hero h1{font-size:26px}.hero .sub{font-size:15px}.container{padding:20px 16px 40px}.card{padding:20px 18px}.gallery{grid-template-columns:1fr}.hotel-card{padding:16px}.timeline{padding-left:24px}thead,tr:has(th){display:none}tr{display:block;margin-bottom:14px;border:1px solid var(--border);border-radius:8px;padding:10px 14px;background:var(--card)}td{display:block;padding:4px 0;border:none;font-size:14px;line-height:1.7}td:empty{display:none}td[data-label]:before{content:attr(data-label);font-weight:600;color:var(--accent);margin-right:8px}td[colspan][data-label]:before{display:none}}
+@media(max-width:640px){.hero{padding:40px 20px 30px}.hero h1{font-size:26px}.hero .sub{font-size:15px}.container{padding:20px 16px 40px}.card{padding:20px 18px}.gallery{grid-template-columns:1fr}.hotel-card{padding:16px}.timeline{padding-left:24px}.return-card{padding:14px}.rc-seat{float:none;display:block;margin-top:2px}.return-cards{display:flex;flex-direction:column;gap:16px;margin-top:12px}.return-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:16px 18px}.rc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.rc-leg{padding:8px 0;border-left:3px solid var(--accent);padding-left:12px;margin-bottom:2px}.rc-leg strong{font-size:15px;color:var(--accent)}.rc-time{display:inline-block;color:var(--muted);font-size:13px;margin-left:8px}.rc-seat{display:inline-block;float:right;font-size:13px;color:var(--muted)}.rc-change{font-size:13px;color:var(--muted);padding:6px 0 6px 15px;border-left:3px solid var(--muted);margin-bottom:2px}.rc-note{font-size:12px;color:var(--muted);border-top:1px dashed var(--border);padding-top:10px;margin-top:6px}.rc-meta{font-size:13px;color:var(--muted)}.arrow{color:var(--accent)}thead,tr:has(th){display:none}tr{display:block;margin-bottom:14px;border:1px solid var(--border);border-radius:8px;padding:10px 14px;background:var(--card)}td{display:block;padding:4px 0;border:none;font-size:14px;line-height:1.7}td:empty{display:none}td[data-label]:before{content:attr(data-label);font-weight:600;color:var(--accent);margin-right:8px}td[colspan][data-label]:before{display:none}}
 </style>
 </head>
 <body>
@@ -80,16 +80,28 @@ td .amap,th .amap{display:inline-block;vertical-align:middle}
 
 <div class="card">
 <h3>返程</h3>
-<div class="alert"><strong>注意：</strong>泾县无直达杭州东的高铁，需在黄山北或绩溪北中转换乘。中转需下车换另一列车，买两张票。</div>
-<div class="table-wrap"><table>
-<tr><th>方案</th><th>第一程</th><th>中转站</th><th>第二程</th><th>耗时</th><th>约票价</th></tr>
-<tr><td rowspan="2"><span class="badge">推荐A</span></td><td><strong>G679</strong><br>泾县15:48→黄山北16:32<br><span class="note">二等座¥51.5</span></td><td>黄山北<br>换乘37min</td><td><strong>G902</strong><br>黄山北17:09→杭州西18:27<br><span class="note">二等座¥106</span></td><td>2h39min</td><td>¥157.5</td></tr>
-<tr><td colspan="5" style="font-size:13px;color:var(--muted);padding-top:4px">到杭州西站，地铁19号线直达市区</td></tr>
-<tr><td rowspan="2">方案B</td><td><strong>G2553</strong><br>泾县13:08→黄山北13:46<br><span class="note">二等座¥51.5</span></td><td>黄山北<br>换乘59min</td><td><strong>G3068</strong><br>黄山北14:45→杭州西15:58<br><span class="note">二等座¥110</span></td><td>2h50min</td><td>¥161.5</td></tr>
-<tr><td colspan="5" style="font-size:13px;color:var(--muted);padding-top:4px">下午出发，傍晚到杭州</td></tr>
-<tr><td rowspan="2">方案C</td><td><strong>G7709</strong><br>泾县08:14→绩溪北08:34<br><span class="note">二等座¥32.5</span></td><td>绩溪北<br>换乘25min</td><td><strong>D3324</strong><br>绩溪北08:59→杭州东10:22<br><span class="note">二等座¥98</span></td><td>2h08min</td><td>¥130.5</td></tr>
-<tr><td colspan="5" style="font-size:13px;color:var(--muted);padding-top:4px">最早到家，到杭州东站，但需赶早出发</td></tr>
-</table></div>
+<div class="alert"><strong>注意：</strong>泾县无直达杭州东的高铁，需中转换乘（买两段票，同站换乘，换个站台即可）。</div>
+
+<div class="return-cards">
+  <div class="return-card"><div class="rc-header"><span class="badge">推荐A</span><span class="rc-meta">全程 2h39min · ¥157.5</span></div>
+    <div class="rc-leg"><strong>G679</strong> 泾县 <span class="arrow">→</span> 黄山北<br><span class="rc-time">15:48 — 16:32</span><span class="rc-seat">二等座 ¥51.5</span></div>
+    <div class="rc-change">同站换乘 37min（换个站台）</div>
+    <div class="rc-leg"><strong>G902</strong> 黄山北 <span class="arrow">→</span> 杭州西<br><span class="rc-time">17:09 — 18:27</span><span class="rc-seat">二等座 ¥106</span></div>
+    <div class="rc-note">到杭州西站，地铁19号线直达市区</div>
+  </div>
+  <div class="return-card"><div class="rc-header"><strong>方案B</strong><span class="rc-meta">全程 2h50min · ¥161.5</span></div>
+    <div class="rc-leg"><strong>G2553</strong> 泾县 <span class="arrow">→</span> 黄山北<br><span class="rc-time">13:08 — 13:46</span><span class="rc-seat">二等座 ¥51.5</span></div>
+    <div class="rc-change">同站换乘 59min</div>
+    <div class="rc-leg"><strong>G3068</strong> 黄山北 <span class="arrow">→</span> 杭州西<br><span class="rc-time">14:45 — 15:58</span><span class="rc-seat">二等座 ¥110</span></div>
+    <div class="rc-note">下午出发，傍晚到家</div>
+  </div>
+  <div class="return-card"><div class="rc-header"><strong>方案C</strong><span class="rc-meta">全程 2h08min · ¥130.5</span></div>
+    <div class="rc-leg"><strong>G7709</strong> 泾县 <span class="arrow">→</span> 绩溪北<br><span class="rc-time">08:14 — 08:34</span><span class="rc-seat">二等座 ¥32.5</span></div>
+    <div class="rc-change">同站换乘 25min</div>
+    <div class="rc-leg"><strong>D3324</strong> 绩溪北 <span class="arrow">→</span> 杭州东<br><span class="rc-time">08:59 — 10:22</span><span class="rc-seat">二等座 ¥98</span></div>
+    <div class="rc-note">最早到家，到杭州东站，需赶早</div>
+  </div>
+</div>
 </div>
 
 <h2 class="sec">二、行程总览</h2>
