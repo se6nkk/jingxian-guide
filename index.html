@@ -53,7 +53,7 @@ tr:last-child td{border-bottom:none}
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
 .amap{padding:4px 12px;font-size:14px;margin-left:6px}
 td .amap,th .amap{display:inline-block;vertical-align:middle}
-@media(max-width:640px){.hero{padding:40px 20px 30px}.hero h1{font-size:26px}.hero .sub{font-size:15px}.container{padding:20px 16px 40px}.card{padding:20px 18px}.gallery{grid-template-columns:1fr}table{font-size:13px}td,th{padding:8px 8px}.hotel-card{padding:16px}.timeline{padding-left:24px}}
+@media(max-width:640px){.hero{padding:40px 20px 30px}.hero h1{font-size:26px}.hero .sub{font-size:15px}.container{padding:20px 16px 40px}.card{padding:20px 18px}.gallery{grid-template-columns:1fr}.hotel-card{padding:16px}.timeline{padding-left:24px}thead{display:none}tr{display:block;margin-bottom:14px;border:1px solid var(--border);border-radius:8px;padding:10px 14px;background:var(--card)}td{display:block;padding:4px 0;border:none;font-size:14px;line-height:1.7}td:empty{display:none}td[data-label]:before{content:attr(data-label);font-weight:600;color:var(--accent);margin-right:8px}}
 </style>
 </head>
 <body>
@@ -93,7 +93,7 @@ td .amap,th .amap{display:inline-block;vertical-align:middle}
 <h2 class="sec">二、行程总览</h2>
 <div class="table-wrap"><table>
 <tr><th style="width:10%">日期</th><th style="width:22%">上午</th><th style="width:22%">下午</th><th style="width:22%">晚上</th><th style="width:24%">住宿</th></tr>
-<tr><td><strong>Day1</strong></td><td>杭州东出发</td><td>抵达泾县，入住县城</td><td>青弋江畔散步+老街美食</td><td><a href="https://uri.amap.com/search?keyword=HYGGE%E4%B8%94%E6%BC%AB%E9%85%92%E5%BA%97%E6%B3%BE%E5%8E%BF%E5%BA%97&callnative=1" class="amap amap-dark">HYGGE且漫酒店</a></td></tr>
+<tr><td><strong>Day1</strong></td><td>杭州东出发</td><td>抵达泾县，入住县城</td><td>青弋江畔散步+老街美食</td><td><a href="https://uri.amap.com/search?keyword=%E4%B8%94%E6%BC%AB%E9%85%92%E5%BA%97&callnative=1" class="amap amap-dark">HYGGE且漫酒店</a></td></tr>
 <tr><td><strong>Day2</strong></td><td>宣纸文化园<span class="badge">核心</span></td><td>转场查济古镇</td><td>古村漫步拍照</td><td><a href="https://uri.amap.com/search?keyword=%E6%9F%A5%E6%B5%8E%E7%94%B0%E5%9B%AD%E5%B0%8F%E7%AD%91%E6%B0%91%E5%AE%BF%E6%B3%BE%E5%8E%BF&callnative=1" class="amap amap-dark">查济田园小筑</a></td></tr>
 <tr><td><strong>Day3</strong></td><td>桃花潭晨雾竹筏</td><td>返回县城午餐</td><td>返程高铁</td><td>—</td></tr>
 </table></div>
@@ -105,7 +105,7 @@ td .amap,th .amap{display:inline-block;vertical-align:middle}
 <div class="timeline">
 <div class="tl-item"><div class="tl-time">12:30</div><div class="tl-desc">杭州东站集合，取票候车</div></div>
 <div class="tl-item"><div class="tl-time">13:38-16:23</div><div class="tl-desc"><strong>G2395</strong> 高铁，杭州东→泾县（2h45min）</div></div>
-<div class="tl-item"><div class="tl-time">16:30</div><div class="tl-desc">出站打车到酒店（约10分钟，¥15-20）<a href="https://uri.amap.com/search?keyword=HYGGE%E4%B8%94%E6%BC%AB%E9%85%92%E5%BA%97%E6%B3%BE%E5%8E%BF%E5%BA%97&callnative=1" class="amap">地图</a></div></div>
+<div class="tl-item"><div class="tl-time">16:30</div><div class="tl-desc">出站打车到酒店（约10分钟，¥15-20）<a href="https://uri.amap.com/search?keyword=%E4%B8%94%E6%BC%AB%E9%85%92%E5%BA%97&callnative=1" class="amap">地图</a></div></div>
 <div class="tl-item"><div class="tl-time">17:00</div><div class="tl-desc">办理入住，稍作休息</div></div>
 <div class="tl-item"><div class="tl-time">18:00</div><div class="tl-desc">
 <strong>晚餐选项：</strong>
@@ -250,6 +250,9 @@ td .amap,th .amap{display:inline-block;vertical-align:middle}
 
 </div>
 <div class="footer">泾县攻略 · 为妈妈和姨妈定制 · 2026年6月 · 蓝色链接点击跳转高德地图</div>
+<script>
+document.querySelectorAll('table').forEach(t=>{let h=t.querySelectorAll('th');if(!h.length)return;let labels=[...h].map(x=>x.textContent.trim());t.querySelectorAll('tr').forEach((r,i)=>{if(i===0&&r.querySelector('th'))return;r.querySelectorAll('td').forEach((d,j)=>{if(labels[j])d.setAttribute('data-label',labels[j])})})});
+</script>
 </body>
 
 </html>
