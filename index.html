@@ -49,7 +49,10 @@ tr:last-child td{border-bottom:none}
 .hotel-card h3{color:#8b6914;margin-bottom:8px}
 .hotel-card .addr{font-size:14px;color:var(--muted);margin-bottom:4px}
 .transit{font-size:13px;color:var(--muted);font-style:italic}
-@media(max-width:640px){.hero{padding:40px 20px 30px}.hero h1{font-size:28px}.container{padding:20px 16px 40px}.card{padding:20px}.gallery{grid-template-columns:1fr}table{font-size:14px}td,th{padding:8px 10px}}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:16px 0}
+.amap{padding:4px 12px;font-size:14px;margin-left:6px}
+td .amap,th .amap{display:inline-block;vertical-align:middle}
+@media(max-width:640px){.hero{padding:40px 20px 30px}.hero h1{font-size:26px}.hero .sub{font-size:15px}.container{padding:20px 16px 40px}.card{padding:20px 18px}.gallery{grid-template-columns:1fr}table{font-size:13px}td,th{padding:8px 8px}.hotel-card{padding:16px}.timeline{padding-left:24px}}
 </style>
 </head>
 <body>
@@ -67,32 +70,32 @@ tr:last-child td{border-bottom:none}
 <h2 class="sec">一、交通 <small>杭州东 ⇌ 泾县</small></h2>
 <div class="card">
 <h3>去程（推荐）</h3>
-<table>
+<div class="table-wrap"><table>
 <tr><th>车次</th><th>出发</th><th>到达</th><th>耗时</th><th>二等座</th><th>一等座</th></tr>
 <tr><td><strong>G2395/G2398</strong></td><td>杭州东 <strong>13:38</strong></td><td>泾县 <strong>16:23</strong></td><td>2h45min</td><td>¥133.5</td><td>¥218.5</td></tr>
-</table>
+</table></div>
 <p class="note">直达无需换乘，中午出发下午到，节奏从容。</p>
 </div>
 
 <div class="card">
 <h3>返程</h3>
 <div class="alert"><strong>注意：</strong>泾县无直达杭州东的高铁，需在黄山北或绩溪北中转。</div>
-<table>
+<div class="table-wrap"><table>
 <tr><th>方案</th><th>出发</th><th>中转</th><th>到达</th><th>耗时</th><th>约票价</th></tr>
 <tr><td><span class="badge">推荐A</span></td><td>泾县 15:48</td><td>黄山北 37min</td><td><strong>杭州西</strong> 18:27</td><td>2h39min</td><td>¥157.5</td></tr>
 <tr><td>方案B</td><td>泾县 13:08</td><td>黄山北 59min</td><td><strong>杭州西</strong> 15:58</td><td>2h50min</td><td>¥161.5</td></tr>
 <tr><td>方案C</td><td>泾县 08:14</td><td>绩溪北 25min</td><td><strong>杭州东</strong> 10:22</td><td>2h08min</td><td>¥130.5</td></tr>
-</table>
+</table></div>
 <p class="note">方案A最从容，到杭州西（地铁19号线达市区）。方案C到杭州东但需赶早。</p>
 </div>
 
 <h2 class="sec">二、行程总览</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th style="width:10%">日期</th><th style="width:22%">上午</th><th style="width:22%">下午</th><th style="width:22%">晚上</th><th style="width:24%">住宿</th></tr>
 <tr><td><strong>Day1</strong></td><td>杭州东出发</td><td>抵达泾县，入住县城</td><td>青弋江畔散步+老街美食</td><td><a href="https://uri.amap.com/search?keyword=HYGGE%E4%B8%94%E6%BC%AB%E9%85%92%E5%BA%97%E6%B3%BE%E5%8E%BF%E5%BA%97&callnative=1" class="amap amap-dark">HYGGE且漫酒店</a></td></tr>
 <tr><td><strong>Day2</strong></td><td>宣纸文化园<span class="badge">核心</span></td><td>转场查济古镇</td><td>古村漫步拍照</td><td><a href="https://uri.amap.com/search?keyword=%E6%9F%A5%E6%B5%8E%E7%94%B0%E5%9B%AD%E5%B0%8F%E7%AD%91%E6%B0%91%E5%AE%BF%E6%B3%BE%E5%8E%BF&callnative=1" class="amap amap-dark">查济田园小筑</a></td></tr>
 <tr><td><strong>Day3</strong></td><td>桃花潭晨雾竹筏</td><td>返回县城午餐</td><td>返程高铁</td><td>—</td></tr>
-</table>
+</table></div>
 
 <h2 class="sec">三、每日详细行程</h2>
 
@@ -116,13 +119,13 @@ tr:last-child td{border-bottom:none}
 <div class="hotel-card">
 <h3>推荐住宿：HYGGE且漫酒店（泾县店）</h3>
 <div class="addr">泾川镇桃花潭东路东郡印象小区1#商业楼337号 <a href="https://uri.amap.com/search?keyword=%E6%B3%BE%E5%8E%BF%E6%A1%83%E8%8A%B1%E6%BD%AD%E4%B8%9C%E8%B7%AF%E4%B8%9C%E9%83%A1%E5%8D%B0%E8%B1%A11%E5%8F%B7%E6%A5%BC&callnative=1" class="amap amap-dark">导航</a></div>
-<table>
+<div class="table-wrap"><table>
 <tr><td style="border:none;width:80px">位置</td><td style="border:none">离高铁站约10分钟车程，到宣纸文化园/查济/桃花潭均居中顺畅</td></tr>
 <tr><td style="border:none">环境</td><td style="border:none">依山傍水，闹中取静——"没有喧嚣，只有恰到好处的温柔"</td></tr>
 <tr><td style="border:none">房间</td><td style="border:none">全屋小度智能客控，床品软硬适中，卫生间干湿分离，一尘不染</td></tr>
 <tr><td style="border:none">早餐</td><td style="border:none">老鸭汤泡锅巴、本地手擀面、馄饨、咖啡豆浆一应俱全</td></tr>
 <tr><td style="border:none">价格</td><td style="border:none">约 ¥250-350/晚 · 携程评分 4.7（208条点评）</td></tr>
-</table>
+</table></div>
 </div>
 </div>
 
@@ -158,13 +161,13 @@ tr:last-child td{border-bottom:none}
 <div class="hotel-card">
 <h3>推荐住宿：查济田园小筑民宿（南门店）</h3>
 <div class="addr">桃花潭镇查济村如城组2号 <a href="{amap('查济田园小筑民宿泾县')}" class="amap amap-dark">导航</a></div>
-<table>
+<div class="table-wrap"><table>
 <tr><td style="border:none;width:80px">位置</td><td style="border:none">查济古镇南门旁，步行5分钟直达景区，老板热情接送</td></tr>
 <tr><td style="border:none">环境</td><td style="border:none">青山绿水环绕，小院幽静，系统窗隔音极好，夜晚安静无喧哗</td></tr>
 <tr><td style="border:none">房间</td><td style="border:none">全屋智能+地暖，零压床垫，干湿分离，原木风设计温馨有格调</td></tr>
 <tr><td style="border:none">服务</td><td style="border:none">老板开车接送进景区，晚上送去自家饭店用餐，清晨可送去拍日出</td></tr>
 <tr><td style="border:none">价格</td><td style="border:none">约 ¥250-350/晚 · 携程评分 4.7（122条点评全五星）</td></tr>
-</table>
+</table></div>
 </div>
 <div class="timeline" style="margin-top:12px">
 <div class="tl-item"><div class="tl-time">18:30</div><div class="tl-desc"><strong>晚餐：查济农家菜</strong>（土鸡、笋干烧肉、小河鱼，人均¥50-60）<a href="{amap('查济古镇农家菜')}" class="amap">地图</a> <span class="transit">古村内步行5-8分钟，沿许溪边逛边走</span></div></div>
@@ -198,7 +201,7 @@ tr:last-child td{border-bottom:none}
 </div>
 
 <h2 class="sec">五、费用预估 <small>2人合计</small></h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>项目</th><th>明细</th><th style="text-align:right">费用</th></tr>
 <tr><td>高铁往返</td><td>去¥133.5×2 + 返¥158×2</td><td style="text-align:right">¥583</td></tr>
 <tr><td>住宿2晚</td><td>HYGGE且漫 ¥300 + 田园小筑 ¥300</td><td style="text-align:right">¥600</td></tr>
@@ -207,7 +210,7 @@ tr:last-child td{border-bottom:none}
 <tr><td>餐饮</td><td>3天6餐，人均¥50/餐</td><td style="text-align:right">¥600</td></tr>
 <tr><td>打车</td><td>全程约6程</td><td style="text-align:right">¥350</td></tr>
 <tr style="font-weight:700;background:#f0ebe0"><td>合计</td><td></td><td style="text-align:right">¥2,193-2,523</td></tr>
-</table>
+</table></div>
 
 <h2 class="sec">六、贴心提醒</h2>
 <div class="tips"><ol>
@@ -221,7 +224,7 @@ tr:last-child td{border-bottom:none}
 </ol></div>
 
 <h2 class="sec">七、必吃清单 <small>不辣/微辣优先</small></h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>美食</th><th>推荐店</th><th>价格</th><th>口味</th></tr>
 <tr><td>茂林糊</td><td>味之道 <a href="{amap('泾县味之道')}" class="amap">地图</a></td><td>¥20</td><td><span class="badge free">不辣</span> 鲜香</td></tr>
 <tr><td>泾县焖面</td><td>味之道</td><td>¥25</td><td><span class="badge free">不辣</span> 咸香</td></tr>
@@ -231,10 +234,10 @@ tr:last-child td{border-bottom:none}
 <tr><td>豆腐脑</td><td>查济街边</td><td>¥5</td><td>咸甜自选</td></tr>
 <tr><td>臭鳜鱼</td><td>查济农家乐 <a href="{amap('查济古镇农家菜')}" class="amap">地图</a></td><td>¥68</td><td><span class="badge paid">微辣</span> 可调</td></tr>
 <tr><td>锅贴饺</td><td>小卫香辣面馆 <a href="{amap('泾县小卫香辣面馆')}" class="amap">地图</a></td><td>¥12</td><td>香脆</td></tr>
-</table>
+</table></div>
 
 <h2 class="sec">八、实用电话</h2>
-<table>
+<div class="table-wrap"><table>
 <tr><th>名称</th><th>电话</th></tr>
 <tr><td>HYGGE且漫酒店</td><td>0563-2388677</td></tr>
 <tr><td>宣纸文化园</td><td>0563-5999966</td></tr>
@@ -242,7 +245,7 @@ tr:last-child td{border-bottom:none}
 <tr><td>查济田园小筑民宿</td><td>待补充</td></tr>
 <tr><td>味之道</td><td>0563-5999179</td></tr>
 <tr><td>桃花潭谪仙酒楼</td><td>0563-5870279</td></tr>
-</table>
+</table></div>
 
 </div>
 <div class="footer">泾县攻略 · 为妈妈和姨妈定制 · 2026年6月 · 蓝色链接点击跳转高德地图</div>
